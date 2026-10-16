@@ -1,0 +1,18 @@
+catch { setAnalysisMode -analysisType single }
+catch { setAnalysisMode -clkSrcPath true }
+catch { setAnalysisMode -clockPropagation sdcControl }
+catch { setAnalysisMode -virtualIPO false }
+catch { setPathGroupOptions reg2reg -effortLevel high -weight 2 }
+catch { setExtractRCMode  -engine preRoute }
+catch {setNanoRouteMode -quiet -extractThirdPartyCompatible false}
+
+catch { setIlmMode -keepHighFanoutPorts true -keepLoopBack false -keepInstInSdc false -keepFlatten true }
+catch { setActiveLogicViewMode -keepHighFanoutCriticalInsts false }
+catch { setDelayCalMode -engine aae }
+catch { setDelayCalMode -ignoreNetLoad false }
+catch { setImportMode -discardFloatingVNets false }
+catch { setImportMode -keepEmptyModule true }
+catch { setFPlanMode -defaultTechSite gsclib090site }
+catch { setFPlanMode -maxIoHeight false }
+catch { setFPlanMode -place_check_ignore_fixed_cell_list {} }
+catch { setFPlanMode -powerRailLayer {} }

@@ -1,0 +1,32 @@
+catch { setAnalysisMode -analysisType single }
+catch { setAnalysisMode -clkSrcPath true }
+catch { setAnalysisMode -clockPropagation sdcControl }
+catch { setAnalysisMode -virtualIPO false }
+catch { setOptMode -activeHoldViews { av } }
+catch { setOptMode -activeSetupViews { av } }
+catch { setOptMode -autoSetupViews { av} }
+catch { setOptMode -autoTDGRSetupViews { av} }
+catch { setOptMode -drcMargin 0 }
+catch { setOptMode -fixDrc true }
+catch { setOptMode -preserveAllSequential false }
+catch { setOptMode -setupTargetSlack 0 }
+catch { setPathGroupOptions default -effortLevel low }
+catch { setPathGroupOptions reg2reg -effortLevel high -weight 2 }
+catch { setExtractRCMode  -engine preRoute }
+catch {setNanoRouteMode -quiet -extractThirdPartyCompatible false}
+catch {setNanoRouteMode -quiet -grouteExpTdStdDelay 35.900000}
+
+catch { setIlmMode -keepHighFanoutPorts true -keepLoopBack false -keepInstInSdc false -keepFlatten true }
+catch { setActiveLogicViewMode -keepHighFanoutCriticalInsts false }
+catch { setUsefulSkewMode -ecoRoute false }
+catch { setDelayCalMode -enable_high_fanout true }
+catch { setDelayCalMode -engine aae }
+catch { setDelayCalMode -ignoreNetLoad false }
+catch { setDelayCalMode -socv_accuracy_mode low }
+catch { setImportMode -discardFloatingVNets false }
+catch { setImportMode -keepEmptyModule true }
+catch { setSIMode -separate_delta_delay_on_data true }
+catch { setFPlanMode -defaultTechSite gsclib090site }
+catch { setFPlanMode -maxIoHeight false }
+catch { setFPlanMode -place_check_ignore_fixed_cell_list {} }
+catch { setFPlanMode -powerRailLayer {} }

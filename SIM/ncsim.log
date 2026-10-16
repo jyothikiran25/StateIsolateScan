@@ -1,0 +1,18 @@
+ncsim(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> run
+-------------------------------------------------------------------------------------------------
+MFG    mode=0 | secret=101  read via scan=101 LEAKED  | write 111 -> ISR_a=111 state=111 OVERWRITTEN
+DEBUG  mode=1 | secret=101  read via scan=000 BLOCKED | write 111 -> ISR_a=111 state=101     BLOCKED
+SECURE mode=2 | secret=101  read via scan=000 BLOCKED | write 111 -> ISR_a=000 state=101     BLOCKED
+-------------------------------------------------------------------------------------------------
+Note: in every mode the testbench also tried to set the mode back to MFG; 'mode=' shows it stayed.
+Simulation complete via $finish(1) at time 470 NS + 0
+./tb_secure.v:125     #20 $finish;
+ncsim> ^C
+ncsim> exit
+ncsim: Memory Usage - 38.6M program + 267.6M data = 306.3M total (306.3M Peak)
+ncsim: CPU Usage - 8.8s system + 1.9s user = 10.7s total (1982.9s, 0.5% cpu)

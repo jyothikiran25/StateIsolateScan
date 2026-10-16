@@ -1,0 +1,177 @@
+
+#
+# Mnemonic Maps
+#
+mmap new -reuse -name {Boolean as Logic} -radix %b -contents {{%c=FALSE -edgepriority 1 -shape low}
+{%c=TRUE -edgepriority 1 -shape high}}
+mmap new -reuse -name {Example Map} -radix %x -contents {{%b=11???? -bgcolor orange -label REG:%x -linecolor yellow -shape bus}
+{%x=1F -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=2C -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=* -label %x -linecolor gray -shape bus}}
+
+array unset createdGroup
+array set createdGroup {}
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_conv.G0}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_conv.G1}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_conv.G2}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_conv.G3}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_conv.G5}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_conv.G6}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_conv.G7}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_conv.G8}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_conv.G9}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_conv.G10}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_conv.G11}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_conv.G12}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_conv.G13}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_conv.G14}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_conv.G15}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_conv.G16}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_conv.G17}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_conv.clk}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_conv.scan_en}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_conv.scan_in}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_conv.scan_out}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_sis.G0}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_sis.G1}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_sis.G2}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_sis.G3}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_sis.G5}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_sis.G6}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_sis.G7}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_sis.G8}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_sis.G9}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_sis.G10}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_sis.G11}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_sis.G12}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_sis.G13}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_sis.G14}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_sis.G15}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_sis.G16}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_sis.G17}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_sis.clk}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_sis.loaden_isr}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_sis.loaden_osr}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_sis.loaden_state}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_sis.o1}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_sis.o2}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_sis.o3}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_sis.q1}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_sis.q2}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_sis.q3}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_sis.qs1}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_sis.qs2}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_sis.qs3}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_sis.scan_in}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_sis.scan_out}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb_s27.u_sis.scanen_isr}]}
+	} ]]
+
+waveform xview limits 0 790000ps

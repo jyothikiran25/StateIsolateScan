@@ -1,0 +1,261 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+Options:	
+Date:		Sun Oct 11 22:14:12 2026
+Host:		cad5 (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (20cores*28cpus*Intel(R) Core(TM) i7-14700 33792KB)
+OS:		Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+License:
+		[22:14:12.095585] Configured Lic search path (21.01-s002): 5280@cadence
+
+		invs	Innovus Implementation System	21.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (31 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+<CMD> getVersion
+<CMD> getVersion
+[INFO] Loading PVS 22.20 fill procedures
+<CMD> win
+<CMD> set init_lef_file /home/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated_ref.lef
+<CMD> set init_verilog s27_sis_netlist.v
+<CMD> set init_top_cell s27_sis
+<CMD> set init_pwr_net VDD
+<CMD> set init_gnd_net VSS
+<CMD> set init_mmmc_file mmmc.tcl
+<CMD> init_design
+#% Begin Load MMMC data ... (date=10/11 22:17:06, mem=1002.5M)
+#% End Load MMMC data ... (date=10/11 22:17:06, total cpu=0:00:00.0, real=0:00:00.0, peak res=1002.9M, current mem=1002.9M)
+rc
+
+Loading LEF file /home/install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated_ref.lef ...
+**WARN: (IMPLF-105):	The layer 'Oxide' specified in SAMENET spacing
+rule is neither a routing layer nor a cut layer. The rule is ignored.
+**WARN: (IMPLF-105):	The layer 'Poly' specified in SAMENET spacing
+rule is neither a routing layer nor a cut layer. The rule is ignored.
+Set DBUPerIGU to M2 pitch 580.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from mmmc.tcl
+Reading libs timing library '/home/install/FOUNDRY/digital/90nm/dig/lib/slow.lib' ...
+Read 479 cells in library 'slow' 
+*** End library_loading (cpu=0.00min, real=0.00min, mem=30.0M, fe_cpu=0.25min, fe_real=2.90min, fe_mem=1042.9M) ***
+#% Begin Load netlist data ... (date=10/11 22:17:06, mem=1022.9M)
+*** Begin netlist parsing (mem=1042.9M) ***
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR2XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR2XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Created 479 new cells from 1 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist 's27_sis_netlist.v'
+
+*** Memory Usage v#1 (Current mem = 1042.887M, initial mem = 483.863M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1042.9M) ***
+#% End Load netlist data ... (date=10/11 22:17:06, total cpu=0:00:00.0, real=0:00:00.0, peak res=1031.6M, current mem=1031.6M)
+Set top cell to s27_sis.
+Hooked 479 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell s27_sis ...
+*** Netlist is unique.
+** info: there are 488 modules.
+** info: there are 21 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 1096.301M, initial mem = 483.863M) ***
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Horizontal Layer M1 offset = 290 (derived)
+Vertical Layer M2 offset = 290 (derived)
+Start create_tracks
+Generated pitch 0.29 in Metal8 is different from 0.87 defined in technology file in unpreferred direction.
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+**WARN: (IMPEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M1 and M2 is not defined in the capacitance table file. The via resistance of 1.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M2 and M3 is not defined in the capacitance table file. The via resistance of 1.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M3 and M4 is not defined in the capacitance table file. The via resistance of 1.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M4 and M5 is not defined in the capacitance table file. The via resistance of 1.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M5 and M6 is not defined in the capacitance table file. The via resistance of 1.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M6 and M7 is not defined in the capacitance table file. The via resistance of 1.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M7 and M8 is not defined in the capacitance table file. The via resistance of 0.35 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M8 and M9 is not defined in the capacitance table file. The via resistance of 0.35 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.08 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.06 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.06 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M4 is not defined in the cap table. Therefore, the LEF value 0.06 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M5 is not defined in the cap table. Therefore, the LEF value 0.06 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M6 is not defined in the cap table. Therefore, the LEF value 0.06 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M7 is not defined in the cap table. Therefore, the LEF value 0.06 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M8 is not defined in the cap table. Therefore, the LEF value 0.02 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M9 is not defined in the cap table. Therefore, the LEF value 0.02 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+Summary of Active RC-Corners : 
+ 
+ Analysis View: av
+    RC-Corner Name        : rc
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+*Info: initialize multi-corner CTS.
+Reading timing constraints file 's27_sis.sdc' ...
+Current (total cpu=0:00:15.4, real=0:02:54, peak res=1316.1M, current mem=1316.1M)
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File s27_sis.sdc, Line 9).
+
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File s27_sis.sdc, Line 10).
+
+s27_sis
+INFO (CTE): Reading of timing constraints file s27_sis.sdc completed, with 2 WARNING
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1324.2M, current mem=1324.2M)
+Current (total cpu=0:00:15.4, real=0:02:54, peak res=1324.2M, current mem=1324.2M)
+Total number of combinational cells: 317
+Total number of sequential cells: 152
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+Total number of usable buffers: 16
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+Total number of usable inverters: 19
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+#% Begin Load MMMC data post ... (date=10/11 22:17:07, mem=1355.3M)
+#% End Load MMMC data post ... (date=10/11 22:17:07, total cpu=0:00:00.0, real=0:00:00.0, peak res=1355.3M, current mem=1355.3M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPLF-105            2  The layer '%s' specified in SAMENET spac...
+WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+WARNING   IMPEXT-2766          9  The sheet resistance for layer %s is not...
+WARNING   IMPEXT-2773          1  The via resistance between layers %s and...
+WARNING   IMPEXT-2776          8  The via resistance between layers %s and...
+WARNING   IMPVL-159          958  Pin '%s' of cell '%s' is defined in LEF ...
+WARNING   TCLCMD-1461          2  Skipped unsupported command: %s          
+*** Message Summary: 983 warning(s), 0 error(s)
+
+<CMD> saveDesign init.enc
+#% Begin save design ... (date=10/11 22:20:03, mem=1359.0M)
+% Begin Save ccopt configuration ... (date=10/11 22:20:03, mem=1359.0M)
+% End Save ccopt configuration ... (date=10/11 22:20:03, total cpu=0:00:00.0, real=0:00:00.0, peak res=1360.1M, current mem=1360.1M)
+% Begin Save netlist data ... (date=10/11 22:20:03, mem=1360.1M)
+Writing Binary DB to init.enc.dat/s27_sis.v.bin in single-threaded mode...
+% End Save netlist data ... (date=10/11 22:20:03, total cpu=0:00:00.0, real=0:00:00.0, peak res=1362.8M, current mem=1360.8M)
+Saving symbol-table file ...
+Saving congestion map file init.enc.dat/s27_sis.route.congmap.gz ...
+% Begin Save AAE data ... (date=10/11 22:20:03, mem=1361.3M)
+Saving AAE Data ...
+% End Save AAE data ... (date=10/11 22:20:03, total cpu=0:00:00.0, real=0:00:00.0, peak res=1361.3M, current mem=1361.3M)
+Saving preference file init.enc.dat/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+% Begin Save floorplan data ... (date=10/11 22:20:03, mem=1366.0M)
+Saving floorplan file ...
+% End Save floorplan data ... (date=10/11 22:20:03, total cpu=0:00:00.0, real=0:00:00.0, peak res=1368.1M, current mem=1368.1M)
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+% Begin Save placement data ... (date=10/11 22:20:03, mem=1368.1M)
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
+% End Save placement data ... (date=10/11 22:20:03, total cpu=0:00:00.0, real=0:00:00.0, peak res=1368.9M, current mem=1368.9M)
+% Begin Save routing data ... (date=10/11 22:20:03, mem=1368.9M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1389.3M) ***
+% End Save routing data ... (date=10/11 22:20:03, total cpu=0:00:00.0, real=0:00:00.0, peak res=1369.2M, current mem=1369.2M)
+Saving property file init.enc.dat/s27_sis.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1392.3M) ***
+% Begin Save power constraints data ... (date=10/11 22:20:03, mem=1370.6M)
+% End Save power constraints data ... (date=10/11 22:20:03, total cpu=0:00:00.0, real=0:00:00.0, peak res=1370.6M, current mem=1370.6M)
+rc
+Generated self-contained design init.enc.dat
+#% End save design ... (date=10/11 22:20:03, total cpu=0:00:00.2, real=0:00:00.0, peak res=1396.8M, current mem=1373.1M)
+*** Message Summary: 0 warning(s), 0 error(s)
+
+
+*** Memory Usage v#1 (Current mem = 1410.496M, initial mem = 483.863M) ***
+*** Message Summary: 983 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:23.0, real=0:05:59, mem=1410.5M) ---
